@@ -73,20 +73,23 @@ new Swiper(".galeriSwiper", {
 
 <!-- NAVBAR -->
 <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+
     <div class="container">
-        
-        <a class="navbar-brand d-flex align-items-center fw-bold" href="index.html">
-    
-        <img 
-            src="assets/images/logo ngletih.png" 
-            alt="Logo SDN Ngletih 1"
-            class="navbar-logo"
-        >
 
-        <span>SDN Ngletih 1</span>
+        <!-- Logo -->
+        <a class="navbar-brand d-flex align-items-center fw-bold"
+            href="index.html">
 
-    </a>
+            <img
+                src="assets/images/logo ngletih.png"
+                alt="Logo SDN Ngletih 1"
+                class="navbar-logo">
 
+            <span>SDN Ngletih 1</span>
+
+        </a>
+
+        <!-- Toggle Mobile -->
         <button
             class="navbar-toggler"
             type="button"
@@ -94,34 +97,191 @@ new Swiper(".galeriSwiper", {
             data-bs-target="#navbarNav">
 
             <span class="navbar-toggler-icon"></span>
+
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarNav">
+        <!-- Menu -->
+        <div class="collapse navbar-collapse"
+            id="navbarNav">
 
-            <ul class="navbar-nav ms-auto">
+            <ul class="navbar-nav ms-auto align-items-lg-center">
 
+                <!-- BERANDA -->
                 <li class="nav-item">
-                    <a href="#home" class="nav-link">Beranda</a>
+
+                    <a href="#home"
+                        class="nav-link">
+
+                        Beranda
+
+                    </a>
+
                 </li>
 
+                <!-- PROFIL -->
                 <li class="nav-item">
-                    <a href="#profil" class="nav-link">Profil</a>
+
+                    <a href="#profil"
+                        class="nav-link">
+
+                        Profil
+
+                    </a>
+
                 </li>
 
-                <li class="nav-item">
-                    <a href="#ekstrakurikuler" class="nav-link">Ekstrakurikuler</a>
+                <!-- AKADEMIK -->
+                <li class="nav-item dropdown">
+
+                    <a class="nav-link dropdown-toggle"
+                        href="#"
+                        role="button"
+                        data-bs-toggle="dropdown">
+
+                        Akademik
+
+                    </a>
+
+                    <ul class="dropdown-menu modern-dropdown">
+
+                        <li>
+
+                            <a class="dropdown-item"
+                                href="#visi">
+
+                                Visi & Misi
+
+                            </a>
+
+                        </li>
+
+                        <li>
+
+                            <a class="dropdown-item"
+                                href="#ekstrakurikuler">
+
+                                Ekstrakurikuler
+
+                            </a>
+
+                        </li>
+
+                        <li>
+
+                            <a class="dropdown-item"
+                                href="#prestasi">
+
+                                Prestasi
+
+                            </a>
+
+                        </li>
+
+                    </ul>
+
                 </li>
 
-                <li class="nav-item">
-                    <a href="#prestasi" class="nav-link">Prestasi</a>
+                <!-- PUBLIKASI -->
+                <li class="nav-item dropdown">
+
+                    <a class="nav-link dropdown-toggle"
+                        href="#"
+                        role="button"
+                        data-bs-toggle="dropdown">
+
+                        Publikasi
+
+                    </a>
+
+                    <ul class="dropdown-menu modern-dropdown">
+
+                        <li>
+
+                            <a class="dropdown-item"
+                                href="#galeri">
+
+                                Galeri
+
+                            </a>
+
+                        </li>
+
+                        <li>
+
+                            <a class="dropdown-item"
+                                href="berita.html">
+
+                                Berita
+
+                            </a>
+
+                        </li>
+
+                        <li>
+
+                            <a class="dropdown-item"
+                                href="sarpras.html">
+
+                                Sarana & Prasarana
+
+                            </a>
+
+                        </li>
+
+                    </ul>
+
                 </li>
 
-                <li class="nav-item">
-                    <a href="#galeri" class="nav-link">Galeri</a>
+                <!-- LAYANAN -->
+                <li class="nav-item dropdown">
+
+                    <a class="nav-link dropdown-toggle"
+                        href="#"
+                        role="button"
+                        data-bs-toggle="dropdown">
+
+                        Layanan
+
+                    </a>
+
+                    <ul class="dropdown-menu modern-dropdown">
+
+                        <li>
+
+                            <a class="dropdown-item"
+                                href="layanan.html">
+
+                                SILADIK
+
+                            </a>
+
+                        </li>
+
+                        <li>
+
+                            <a class="dropdown-item"
+                                href="aduan.html">
+
+                                Aduan
+
+                            </a>
+
+                        </li>
+
+                    </ul>
+
                 </li>
 
+                <!-- KONTAK -->
                 <li class="nav-item">
-                    <a href="#kontak" class="nav-link">Kontak</a>
+
+                    <a href="#kontak"
+                        class="nav-link">
+
+                        Kontak
+
+                    </a>
+
                 </li>
 
             </ul>
@@ -129,6 +289,7 @@ new Swiper(".galeriSwiper", {
         </div>
 
     </div>
+
 </nav>
 
 <!-- HERO -->
@@ -165,7 +326,7 @@ new Swiper(".galeriSwiper", {
                     </a>
 
                     <a href="#profil" class="btn btn-outline-light btn-lg">
-                        Profil Sekolah
+                        Daftar Sekarang
                     </a>
                 </div>
 
@@ -287,8 +448,103 @@ new Swiper(".galeriSwiper", {
 
 </section>
 
+<!-- ========================================
+        MAKLUMAT PELAYANAN
+======================================== -->
+
+<section id="maklumat" class="maklumat-section">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+
+            <span class="section-badge">
+                Pelayanan Publik
+            </span>
+
+            <h2 class="section-title">
+                Maklumat Pelayanan
+            </h2>
+
+            <p class="section-subtitle">
+                Komitmen SDN Ngletih 1 dalam memberikan pelayanan pendidikan
+                yang profesional, transparan, cepat, dan berorientasi kepada
+                kepuasan masyarakat.
+            </p>
+
+        </div>
+
+        <div class="row align-items-center g-5">
+
+
+            <!-- Isi -->
+            <div class="col-lg-12">
+
+                <div class="maklumat-card">
+
+                    <div class="maklumat-header">
+
+                        <i class="bi bi-award-fill"></i>
+
+                        <h3>
+                            Maklumat Pelayanan SDN Ngletih 1
+                        </h3>
+
+                    </div>
+
+                    <ol class="maklumat-list">
+
+                        <li>
+                            Melayani dengan santun dan
+                            ramah.
+
+                        <li>
+                            Memproses pelayanan secara cermat dan tepat.
+                        </li>
+
+                        <li>
+                            Memberikan kemudahan pelayanan.
+                        </li>
+
+                        <li>
+                            Berorientasi kepada keputusan pengguna layanan.
+                        </li>
+
+                        <li>
+                            Memproses layanan sesuai 
+                            perundang undangan ddan prosedur yang berlaku.
+                        </li>
+
+                        <li>
+                            Kami bersedia menerima sanksi sesuai dengan peraturan perundang-undangan yang berlaku.
+                        </li>
+
+                    </ol>
+
+                    <div class="kepsek-sign">
+
+                        <h5>
+                            Kepala Sekolah
+                        </h5>
+
+                        <strong>
+                            Eka Yudi Kristanto, S.Pd.
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
 <!-- VISI MISI -->
-<section class="visi-section">
+<section id="visi" class="visi-section">
 
     <div class="container">
 
@@ -635,28 +891,19 @@ new Swiper(".galeriSwiper", {
             </div>
         </div>
 
-    </div>
-</section>
+        <div class="text-center mt-5">
 
-<!-- PPDB -->
-<section class="ppdb-section py-5">
+        <a href="berita.html" class="btn btn-primary btn-lg">
 
-    <div class="container text-center">
+            <i class="bi bi-newspaper me-2"></i>
 
-        <h2 class="text-white fw-bold mb-3">
-            Penerimaan Peserta Didik Baru
-        </h2>
+            Lihat Berita Terkini
 
-        <p class="text-white">
-            Daftarkan putra-putri terbaik Anda di SDN Ngletih 1.
-        </p>
-
-        <a href="#" class="btn btn-warning btn-lg">
-            Daftar Sekarang
         </a>
 
     </div>
 
+    </div>
 </section>
 
 <!-- KONTAK -->
