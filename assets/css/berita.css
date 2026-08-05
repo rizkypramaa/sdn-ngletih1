@@ -276,3 +276,95 @@
     }
 
 }
+
+/* =====================================
+   CARD GRID
+===================================== */
+
+.news-card{
+
+    display:flex;
+
+    flex-direction:column;
+
+    height:100%;
+
+}
+
+.news-gallery{
+
+    width:100%;
+
+    height:230px;
+
+    object-fit:cover;
+
+    border-radius:18px;
+
+}
+
+.news-card p{
+
+    flex-grow:1;
+
+    margin-bottom:0;
+
+}
+
+.news-card .btn{
+
+    border-radius:12px;
+
+    padding:12px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.news-card .btn:hover{
+
+    transform:translateY(-3px);
+
+}
+
+.news-title{
+
+    font-size:24px;
+
+    line-height:1.4;
+
+    min-height:70px;
+
+}
+
+.news-category{
+
+    margin-bottom:15px;
+
+}
+
+.news-meta{
+
+    margin-bottom:20px;
+
+}
+   
+@media(max-width:768px){
+
+.news-title{
+
+    min-height:auto;
+
+    font-size:22px;
+
+}
+
+.news-gallery{
+
+    height:210px;
+
+}
+
+}
