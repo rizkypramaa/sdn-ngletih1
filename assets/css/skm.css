@@ -1,0 +1,737 @@
+/* ===================================================
+   HASIL SKM
+=================================================== */
+
+.skm-section{
+    background:#f4f8fc;
+    padding:90px 0;
+}
+
+
+/* ==========================
+   IMAGE
+========================== */
+
+.skm-image-card{
+
+    background:#ffffff;
+
+    border-radius:24px;
+
+    overflow:hidden;
+
+    box-shadow:
+        0 15px 40px rgba(23,107,135,.10);
+
+    border:1px solid #e1ebf5;
+
+    transition:.35s;
+}
+
+.skm-image-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:
+        0 20px 45px rgba(23,107,135,.16);
+}
+
+
+.skm-image-card img{
+
+    width:100%;
+
+    display:block;
+
+    max-height:600px;
+
+    object-fit:contain;
+
+    background:#ffffff;
+
+    padding:15px;
+
+}
+
+
+.skm-image-caption{
+
+    padding:18px 20px;
+
+    background:#176B87;
+
+    color:#ffffff;
+
+    text-align:center;
+
+    font-weight:600;
+
+}
+
+.skm-image-caption i{
+
+    margin-right:8px;
+
+}
+
+
+/* ==========================
+   CONTENT
+========================== */
+
+.skm-content{
+
+    padding:15px 10px;
+}
+
+
+.skm-label{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    padding:8px 18px;
+
+    border-radius:30px;
+
+    background:#e5f2f7;
+
+    color:#176B87;
+
+    font-size:14px;
+
+    font-weight:700;
+
+    margin-bottom:18px;
+}
+
+
+.skm-content h3{
+
+    font-size:34px;
+
+    font-weight:800;
+
+    color:#176B87;
+
+    margin-bottom:20px;
+
+}
+
+
+.skm-content p{
+
+    color:#475569;
+
+    font-size:16px;
+
+    line-height:1.8;
+
+    margin-bottom:15px;
+}
+
+
+/* ==========================
+   SCORE
+========================== */
+
+.skm-score{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+
+    background:#ffffff;
+
+    border-radius:18px;
+
+    padding:20px 25px;
+
+    margin-top:25px;
+
+    border-left:5px solid #176B87;
+
+    box-shadow:
+        0 8px 25px rgba(23,107,135,.08);
+}
+
+
+.score-number{
+
+    font-size:42px;
+
+    font-weight:800;
+
+    color:#176B87;
+
+    line-height:1;
+}
+
+
+.score-info{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:5px;
+}
+
+
+.score-info strong{
+
+    font-size:20px;
+
+    color:#176B87;
+}
+
+
+.score-info span{
+
+    font-size:14px;
+
+    color:#64748b;
+}
+
+
+/* ==========================
+   INFO RESPONDEN
+========================== */
+
+.skm-info{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:15px;
+
+    margin-top:20px;
+}
+
+
+.skm-info > div{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    background:#ffffff;
+
+    border:1px solid #e1ebf5;
+
+    border-radius:15px;
+
+    padding:15px;
+}
+
+
+.skm-info i{
+
+    font-size:25px;
+
+    color:#176B87;
+}
+
+
+.skm-info span{
+
+    display:flex;
+
+    flex-direction:column;
+}
+
+
+.skm-info strong{
+
+    color:#334155;
+
+    font-size:14px;
+}
+
+
+.skm-info small{
+
+    color:#64748b;
+
+    margin-top:3px;
+}
+
+
+/* ==========================
+   BUTTON
+========================== */
+
+.btn-info-modern{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    padding:12px 22px;
+
+    border-radius:30px;
+
+    background:#176B87;
+
+    color:#ffffff;
+
+    font-weight:600;
+
+    text-decoration:none;
+
+    transition:.3s;
+}
+
+
+.btn-info-modern:hover{
+
+    background:#12576d;
+
+    color:#ffffff;
+
+    transform:translateY(-3px);
+
+}
+
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media(max-width:992px){
+
+    .skm-content{
+
+        padding-top:10px;
+
+    }
+
+    .skm-content h3{
+
+        font-size:30px;
+
+    }
+
+}
+
+
+@media(max-width:768px){
+
+    .skm-section{
+
+        padding:70px 0;
+
+    }
+
+    .skm-content h3{
+
+        font-size:26px;
+
+    }
+
+    .skm-score{
+
+        padding:18px;
+    }
+
+    .score-number{
+
+        font-size:34px;
+
+    }
+
+    .skm-info{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+
+@media(max-width:576px){
+
+    .skm-image-card{
+
+        border-radius:18px;
+
+    }
+
+    .skm-score{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+    }
+
+}
+
+/* ===================================================
+   DESKRIPSI SKM
+=================================================== */
+
+.skm-description p{
+
+    color:#475569;
+
+    font-size:15px;
+
+    line-height:1.85;
+
+    text-align:justify;
+
+    margin-bottom:15px;
+
+}
+
+.skm-description strong{
+
+    color:#176B87;
+
+}
+
+
+/* ===================================================
+   HASIL JENIS LAYANAN
+=================================================== */
+
+.skm-result-section{
+
+    margin-top:30px;
+
+}
+
+.skm-result-section h4{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    color:#176B87;
+
+    font-size:19px;
+
+    font-weight:700;
+
+    margin-bottom:15px;
+
+}
+
+.skm-result-section h4 i{
+
+    font-size:21px;
+
+}
+
+
+/* ===================================================
+   RESULT CARD
+=================================================== */
+
+.skm-result-card{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    background:#fff;
+
+    border:1px solid #e1ebf5;
+
+    border-radius:15px;
+
+    padding:15px;
+
+    margin-bottom:12px;
+
+    box-shadow:0 5px 15px rgba(23,107,135,.05);
+
+    transition:.3s;
+
+}
+
+.skm-result-card:hover{
+
+    transform:translateX(5px);
+
+    box-shadow:0 8px 20px rgba(23,107,135,.10);
+
+}
+
+
+.skm-result-icon{
+
+    width:45px;
+
+    height:45px;
+
+    min-width:45px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:12px;
+
+    background:#e8f4f8;
+
+    color:#176B87;
+
+    font-size:20px;
+
+}
+
+
+.skm-result-card strong{
+
+    display:block;
+
+    color:#334155;
+
+    font-size:14px;
+
+    line-height:1.5;
+
+}
+
+
+/* ===================================================
+   RESULT META
+=================================================== */
+
+.skm-result-meta{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:15px;
+
+    margin-top:6px;
+
+}
+
+.skm-result-meta span{
+
+    color:#64748b;
+
+    font-size:13px;
+
+}
+
+.skm-result-meta i{
+
+    color:#176B87;
+
+    margin-right:3px;
+
+}
+
+.skm-result-meta b{
+
+    color:#176B87;
+
+}
+
+
+/* ===================================================
+   UNSUR PELAYANAN
+=================================================== */
+
+.skm-element-list{
+
+    background:#fff;
+
+    border:1px solid #e1ebf5;
+
+    border-radius:16px;
+
+    overflow:hidden;
+
+}
+
+
+.skm-element-item{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:15px;
+
+    padding:12px 16px;
+
+    border-bottom:1px solid #edf2f7;
+
+    transition:.25s;
+
+}
+
+
+.skm-element-item:last-child{
+
+    border-bottom:none;
+
+}
+
+
+.skm-element-item:hover{
+
+    background:#f5fafd;
+
+}
+
+
+.skm-element-item span{
+
+    color:#475569;
+
+    font-size:14px;
+
+    line-height:1.5;
+
+}
+
+
+.skm-element-item strong{
+
+    min-width:55px;
+
+    text-align:center;
+
+    background:#e8f4f8;
+
+    color:#176B87;
+
+    padding:5px 8px;
+
+    border-radius:8px;
+
+    font-size:13px;
+
+}
+
+
+/* ===================================================
+   CLOSING
+=================================================== */
+
+.skm-closing{
+
+    position:relative;
+
+    background:linear-gradient(
+        135deg,
+        #eef8fb,
+        #f7fbff
+    );
+
+    border-left:4px solid #176B87;
+
+    border-radius:14px;
+
+    padding:20px 22px;
+
+    margin-top:30px;
+
+}
+
+
+.skm-closing i{
+
+    color:#176B87;
+
+    font-size:30px;
+
+    opacity:.4;
+
+}
+
+
+.skm-closing p{
+
+    color:#475569;
+
+    font-size:14px;
+
+    line-height:1.8;
+
+    margin-bottom:10px;
+
+    text-align:justify;
+
+}
+
+
+.skm-closing p:last-child{
+
+    margin-bottom:0;
+
+}
+
+
+/* ===================================================
+   RESPONSIVE
+=================================================== */
+
+@media(max-width:768px){
+
+    .skm-result-meta{
+
+        flex-direction:column;
+
+        gap:3px;
+
+    }
+
+    .skm-element-item{
+
+        align-items:flex-start;
+
+    }
+
+}
+
+
+@media(max-width:576px){
+
+    .skm-content h3{
+
+        font-size:24px;
+
+    }
+
+    .skm-result-card{
+
+        align-items:flex-start;
+
+    }
+
+    .skm-element-item{
+
+        padding:11px 12px;
+
+    }
+
+    .skm-element-item span{
+
+        font-size:13px;
+
+    }
+
+}

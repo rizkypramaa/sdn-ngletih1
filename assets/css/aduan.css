@@ -1,0 +1,1414 @@
+/* =====================================================
+   HALAMAN PENGADUAN
+   SDN NGLETIH 1
+===================================================== */
+
+
+/* =====================================================
+   COLOR
+===================================================== */
+
+:root{
+
+    --aduan-primary:#176B87;
+
+    --aduan-primary-dark:#12566C;
+
+    --aduan-secondary:#86B6F6;
+
+    --aduan-light:#EEF7FA;
+
+    --aduan-bg:#F5FAFC;
+
+    --aduan-text:#475569;
+
+    --aduan-muted:#64748B;
+
+    --aduan-border:#DCEAF0;
+
+    --aduan-white:#FFFFFF;
+
+}
+
+
+/* =====================================================
+   BODY
+===================================================== */
+
+body{
+
+    font-family:'Poppins', sans-serif;
+
+    background:var(--aduan-bg);
+
+    color:var(--aduan-text);
+
+}
+
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.aduan-hero{
+
+    position:relative;
+
+    overflow:hidden;
+
+    padding:110px 0 100px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #176B87 0%,
+            #2785A0 50%,
+            #86B6F6 100%
+        );
+
+    color:#fff;
+
+}
+
+
+/* decorative circle */
+
+.aduan-hero::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:420px;
+
+    height:420px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.08);
+
+    top:-180px;
+
+    right:-100px;
+
+}
+
+
+.aduan-hero::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:280px;
+
+    height:280px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.06);
+
+    bottom:-150px;
+
+    left:-100px;
+
+}
+
+
+/* =====================================================
+   HERO BADGE
+===================================================== */
+
+.aduan-badge{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    padding:10px 20px;
+
+    margin-bottom:20px;
+
+    border-radius:50px;
+
+    background:rgba(255,255,255,.14);
+
+    border:1px solid rgba(255,255,255,.25);
+
+    backdrop-filter:blur(8px);
+
+    font-size:14px;
+
+    font-weight:600;
+
+    letter-spacing:.5px;
+
+}
+
+
+/* =====================================================
+   HERO TITLE
+===================================================== */
+
+.aduan-hero-title{
+
+    font-size:56px;
+
+    line-height:1.15;
+
+    font-weight:800;
+
+    margin-bottom:25px;
+
+}
+
+
+.aduan-hero-title span{
+
+    display:block;
+
+    color:#E7F7FF;
+
+}
+
+
+/* =====================================================
+   HERO TEXT
+===================================================== */
+
+.aduan-hero-text{
+
+    max-width:650px;
+
+    font-size:17px;
+
+    line-height:1.9;
+
+    color:rgba(255,255,255,.94);
+
+    margin-bottom:30px;
+
+}
+
+
+/* =====================================================
+   HERO BUTTON
+===================================================== */
+
+.aduan-main-button{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    padding:14px 25px;
+
+    border-radius:12px;
+
+    background:#efeee9;
+
+    color:#212529;
+
+    text-decoration:none;
+
+    font-weight:700;
+
+    box-shadow:
+        0 10px 25px rgba(0,0,0,.12);
+
+    transition:.3s;
+
+}
+
+
+.aduan-main-button:hover{
+
+    background:#91a8cd;
+
+    color:#212529;
+
+    transform:translateY(-3px);
+
+    box-shadow:
+        0 15px 30px rgba(0,0,0,.18);
+
+}
+
+
+/* =====================================================
+   HERO IMAGE
+===================================================== */
+
+.aduan-hero-image-wrapper{
+
+    position:relative;
+
+    z-index:2;
+
+    padding:20px;
+
+}
+
+
+.aduan-hero-image{
+
+    max-height:380px;
+
+    width:auto;
+
+    filter:
+        drop-shadow(
+            0 20px 35px rgba(0,0,0,.18)
+        );
+
+    transition:.4s;
+
+}
+
+
+.aduan-hero-image:hover{
+
+    transform:translateY(-8px);
+
+}
+
+
+/* =====================================================
+   JENIS LAYANAN SECTION
+===================================================== */
+
+.aduan-type-section{
+
+    padding:90px 0;
+
+    background:#FFFFFF;
+
+}
+
+
+/* =====================================================
+   SECTION HEADING
+===================================================== */
+
+.aduan-section-heading{
+
+    max-width:750px;
+
+    margin:0 auto 50px;
+
+}
+
+
+.aduan-section-heading span{
+
+    display:inline-block;
+
+    color:var(--aduan-primary);
+
+    font-size:13px;
+
+    font-weight:700;
+
+    letter-spacing:1px;
+
+    margin-bottom:10px;
+
+}
+
+
+.aduan-section-heading h2{
+
+    color:var(--aduan-primary);
+
+    font-size:38px;
+
+    font-weight:800;
+
+    margin-bottom:15px;
+
+}
+
+
+.aduan-section-heading p{
+
+    color:var(--aduan-muted);
+
+    font-size:16px;
+
+    line-height:1.8;
+
+}
+
+
+/* =====================================================
+   TYPE CARD
+===================================================== */
+
+.aduan-type-card{
+
+    height:100%;
+
+    background:#fff;
+
+    border:1px solid var(--aduan-border);
+
+    border-radius:22px;
+
+    padding:35px 30px;
+
+    text-align:center;
+
+    box-shadow:
+        0 10px 30px rgba(23,107,135,.07);
+
+    transition:.35s;
+
+}
+
+
+.aduan-type-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:#B9DCE7;
+
+    box-shadow:
+        0 20px 40px rgba(23,107,135,.12);
+
+}
+
+
+.aduan-type-icon{
+
+    width:70px;
+
+    height:70px;
+
+    margin:0 auto 20px;
+
+    border-radius:20px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:#E7F4F8;
+
+    color:var(--aduan-primary);
+
+    font-size:30px;
+
+}
+
+
+.aduan-icon-green{
+
+    background:#E9F7EF;
+
+    color:#198754;
+
+}
+
+
+.aduan-icon-yellow{
+
+    background:#FFF4D6;
+
+    color:#D99A00;
+
+}
+
+
+.aduan-type-card h3{
+
+    color:var(--aduan-primary);
+
+    font-size:22px;
+
+    font-weight:700;
+
+    margin-bottom:12px;
+
+}
+
+
+.aduan-type-card p{
+
+    color:var(--aduan-muted);
+
+    font-size:14px;
+
+    line-height:1.8;
+
+    margin:0;
+
+}
+
+
+/* =====================================================
+   REKAP SECTION
+===================================================== */
+
+.aduan-rekap-section{
+
+    padding:100px 0;
+
+    background:
+        linear-gradient(
+            180deg,
+            #F4FAFC 0%,
+            #FFFFFF 100%
+        );
+
+}
+
+
+/* =====================================================
+   REKAP IMAGE
+===================================================== */
+
+.aduan-rekap-image-card{
+
+    overflow:hidden;
+
+    background:#fff;
+
+    border-radius:24px;
+
+    border:1px solid var(--aduan-border);
+
+    box-shadow:
+        0 15px 40px rgba(23,107,135,.10);
+
+}
+
+
+.aduan-rekap-image{
+
+    display:block;
+
+    width:100%;
+
+    max-height:750px;
+
+    object-fit:contain;
+
+    background:#fff;
+
+    padding:15px;
+
+}
+
+
+.aduan-rekap-caption{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    padding:18px 22px;
+
+    background:var(--aduan-primary);
+
+    color:#fff;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    line-height:1.5;
+
+}
+
+
+.aduan-rekap-caption i{
+
+    font-size:23px;
+
+}
+
+
+/* =====================================================
+   REKAP CONTENT
+===================================================== */
+
+.aduan-rekap-content{
+
+    padding-top:5px;
+
+}
+
+
+.aduan-section-label{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    padding:9px 17px;
+
+    border-radius:50px;
+
+    background:#E7F4F8;
+
+    color:var(--aduan-primary);
+
+    font-size:12px;
+
+    font-weight:700;
+
+    letter-spacing:.5px;
+
+    margin-bottom:18px;
+
+}
+
+
+.aduan-rekap-content h2{
+
+    color:var(--aduan-primary);
+
+    font-size:35px;
+
+    line-height:1.3;
+
+    font-weight:800;
+
+    margin-bottom:10px;
+
+}
+
+
+.aduan-period{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    color:var(--aduan-muted);
+
+    font-size:14px;
+
+    font-weight:600;
+
+    margin-bottom:25px;
+
+}
+
+
+.aduan-period i{
+
+    color:var(--aduan-primary);
+
+}
+
+
+.aduan-rekap-content > p{
+
+    color:var(--aduan-text);
+
+    font-size:15px;
+
+    line-height:1.85;
+
+    text-align:justify;
+
+    margin-bottom:15px;
+
+}
+
+
+.aduan-rekap-content strong{
+
+    color:var(--aduan-primary);
+
+}
+
+
+/* =====================================================
+   STATISTIK
+===================================================== */
+
+.aduan-stat-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:14px;
+
+    margin:28px 0;
+
+}
+
+
+.aduan-stat-card{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:13px;
+
+    padding:17px;
+
+    background:#fff;
+
+    border:1px solid var(--aduan-border);
+
+    border-radius:16px;
+
+    box-shadow:
+        0 5px 18px rgba(23,107,135,.05);
+
+    transition:.3s;
+
+}
+
+
+.aduan-stat-card:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:
+        0 10px 25px rgba(23,107,135,.10);
+
+}
+
+
+.aduan-stat-icon{
+
+    width:46px;
+
+    height:46px;
+
+    min-width:46px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:13px;
+
+    background:#E7F4F8;
+
+    color:var(--aduan-primary);
+
+    font-size:20px;
+
+}
+
+
+.aduan-stat-success{
+
+    background:#E8F7EE;
+
+    color:#198754;
+
+}
+
+
+.aduan-stat-warning{
+
+    background:#FFF4D6;
+
+    color:#D99A00;
+
+}
+
+
+.aduan-stat-danger{
+
+    background:#FDECEC;
+
+    color:#DC3545;
+
+}
+
+
+.aduan-stat-card span{
+
+    display:block;
+
+    color:var(--aduan-muted);
+
+    font-size:11px;
+
+    margin-bottom:2px;
+
+}
+
+
+.aduan-stat-card strong{
+
+    display:block;
+
+    color:var(--aduan-primary);
+
+    font-size:25px;
+
+    font-weight:800;
+
+}
+
+
+/* =====================================================
+   INFO CARD
+===================================================== */
+
+.aduan-info-card{
+
+    padding:20px;
+
+    margin-top:18px;
+
+    border-left:4px solid var(--aduan-primary);
+
+    border-radius:12px;
+
+    background:#fff;
+
+    box-shadow:
+        0 5px 18px rgba(23,107,135,.05);
+
+}
+
+
+.aduan-info-card h4{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:9px;
+
+    color:var(--aduan-primary);
+
+    font-size:17px;
+
+    font-weight:700;
+
+    margin-bottom:9px;
+
+}
+
+
+.aduan-info-card p{
+
+    color:var(--aduan-text);
+
+    font-size:14px;
+
+    line-height:1.8;
+
+    text-align:justify;
+
+    margin:0;
+
+}
+
+
+/* =====================================================
+   COMMITMENT
+===================================================== */
+
+.aduan-commitment{
+
+    display:flex;
+
+    gap:15px;
+
+    margin-top:25px;
+
+    padding:23px;
+
+    border-radius:18px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #176B87,
+            #2C8FA9
+        );
+
+    color:#fff;
+
+    box-shadow:
+        0 12px 30px rgba(23,107,135,.15);
+
+}
+
+
+.aduan-commitment-icon{
+
+    width:46px;
+
+    height:46px;
+
+    min-width:46px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:13px;
+
+    background:rgba(255,255,255,.15);
+
+    font-size:28px;
+
+}
+
+
+.aduan-commitment h4{
+
+    font-size:17px;
+
+    font-weight:700;
+
+    margin-bottom:7px;
+
+}
+
+
+.aduan-commitment p{
+
+    font-size:14px;
+
+    line-height:1.8;
+
+    margin:0;
+
+    color:rgba(255,255,255,.95);
+
+}
+
+
+/* =====================================================
+   CTA
+===================================================== */
+
+.aduan-cta-section{
+
+    padding:80px 0;
+
+    background:#EEF7FA;
+
+}
+
+
+.aduan-cta{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:25px;
+
+    padding:40px;
+
+    border-radius:24px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #176B87,
+            #2B8DA7
+        );
+
+    color:#fff;
+
+    box-shadow:
+        0 15px 40px rgba(23,107,135,.15);
+
+}
+
+
+.aduan-cta-icon{
+
+    width:70px;
+
+    height:70px;
+
+    min-width:70px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:20px;
+
+    background:rgba(255,255,255,.15);
+
+    font-size:30px;
+
+}
+
+
+.aduan-cta-content h2{
+
+    font-size:28px;
+
+    font-weight:700;
+
+    margin-bottom:12px;
+
+}
+
+
+.aduan-cta-content p{
+
+    max-width:850px;
+
+    font-size:14px;
+
+    line-height:1.8;
+
+    color:rgba(255,255,255,.92);
+
+}
+
+
+.aduan-cta-button{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:9px;
+
+    padding:12px 20px;
+
+    border-radius:10px;
+
+    background:#FFC107;
+
+    color:#212529;
+
+    text-decoration:none;
+
+    font-weight:700;
+
+    margin-top:5px;
+
+    transition:.3s;
+
+}
+
+
+.aduan-cta-button:hover{
+
+    background:#eeedec;
+
+    color:#212529;
+
+    transform:translateY(-3px);
+
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media(max-width:992px){
+
+    .aduan-hero{
+
+        padding:90px 0 80px;
+
+    }
+
+
+    .aduan-hero-title{
+
+        font-size:44px;
+
+    }
+
+
+    .aduan-hero-image{
+
+        max-height:300px;
+
+    }
+
+
+    .aduan-rekap-content h2{
+
+        font-size:30px;
+
+    }
+
+
+    .aduan-cta{
+
+        padding:30px;
+
+    }
+
+}
+
+
+@media(max-width:768px){
+
+    .aduan-hero{
+
+        padding:75px 0 65px;
+
+    }
+
+
+    .aduan-hero-title{
+
+        font-size:36px;
+
+    }
+
+
+    .aduan-hero-text{
+
+        font-size:15px;
+
+    }
+
+
+    .aduan-section-heading h2{
+
+        font-size:30px;
+
+    }
+
+
+    .aduan-rekap-section{
+
+        padding:70px 0;
+
+    }
+
+
+    .aduan-stat-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+    .aduan-cta{
+
+        flex-direction:column;
+
+        text-align:center;
+
+    }
+
+
+    .aduan-cta-content p{
+
+        margin-left:auto;
+
+        margin-right:auto;
+
+    }
+
+}
+
+
+@media(max-width:576px){
+
+    .aduan-hero-title{
+
+        font-size:31px;
+
+    }
+
+
+    .aduan-badge{
+
+        font-size:12px;
+
+    }
+
+
+    .aduan-type-section{
+
+        padding:65px 0;
+
+    }
+
+
+    .aduan-type-card{
+
+        padding:28px 22px;
+
+    }
+
+
+    .aduan-rekap-image{
+
+        padding:8px;
+
+    }
+
+
+    .aduan-commitment{
+
+        padding:18px;
+
+    }
+
+
+    .aduan-cta{
+
+        padding:25px 20px;
+
+        border-radius:18px;
+
+    }
+
+
+    .aduan-cta-content h2{
+
+        font-size:23px;
+
+    }
+
+}
+
+/* =====================================================
+   KOMITMEN PENGADUAN
+===================================================== */
+
+.aduan-commitment {
+
+    display: flex;
+
+    gap: 25px;
+
+    background: #ffffff;
+
+    border-radius: 24px;
+
+    padding: 35px 40px;
+
+    margin-top: 30px;
+
+    border-left: 5px solid #176B87;
+
+    box-shadow:
+        0 12px 35px rgba(23, 107, 135, 0.10);
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+
+/* Dekorasi background */
+
+.aduan-commitment::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 180px;
+
+    height: 180px;
+
+    border-radius: 50%;
+
+    background: rgba(134, 182, 246, 0.10);
+
+    right: -70px;
+
+    bottom: -80px;
+
+}
+
+
+/* =====================================================
+   ICON
+===================================================== */
+
+.aduan-commitment-icon {
+
+    width: 60px;
+
+    height: 60px;
+
+    min-width: 60px;
+
+    border-radius: 18px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: linear-gradient(
+        135deg,
+        #176B87,
+        #86B6F6
+    );
+
+    color: #ffffff;
+
+    font-size: 28px;
+
+    box-shadow:
+        0 8px 20px rgba(23, 107, 135, 0.20);
+
+    position: relative;
+
+    z-index: 2;
+
+}
+
+
+/* =====================================================
+   CONTENT
+===================================================== */
+
+.aduan-commitment-content {
+
+    position: relative;
+
+    z-index: 2;
+
+    flex: 1;
+
+}
+
+
+.aduan-commitment-content h4 {
+
+    color: #176B87;
+
+    font-size: 25px;
+
+    font-weight: 700;
+
+    margin-bottom: 18px;
+
+}
+
+
+.aduan-commitment-content p {
+
+    color: #475569;
+
+    font-size: 16px;
+
+    line-height: 1.85;
+
+    margin-bottom: 15px;
+
+}
+
+
+/* =====================================================
+   QUOTE
+===================================================== */
+
+.aduan-quote {
+
+    background: #EEF5FF;
+
+    border-radius: 14px;
+
+    padding: 18px 22px;
+
+    color: #176B87 !important;
+
+    font-weight: 600;
+
+    font-style: italic;
+
+    border-left: 4px solid #86B6F6;
+
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 768px) {
+
+    .aduan-commitment {
+
+        flex-direction: column;
+
+        padding: 28px 25px;
+
+        gap: 20px;
+
+    }
+
+    .aduan-commitment-icon {
+
+        width: 55px;
+
+        height: 55px;
+
+        min-width: 55px;
+
+        font-size: 24px;
+
+    }
+
+    .aduan-commitment-content h4 {
+
+        font-size: 22px;
+
+    }
+
+    .aduan-commitment-content p {
+
+        font-size: 15px;
+
+        line-height: 1.8;
+
+    }
+
+}
+
+
+@media (max-width: 576px) {
+
+    .aduan-commitment {
+
+        padding: 22px 20px;
+
+        border-radius: 18px;
+
+    }
+
+    .aduan-quote {
+
+        padding: 15px 17px;
+
+    }
+
+}

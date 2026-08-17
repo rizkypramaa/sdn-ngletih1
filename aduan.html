@@ -3,269 +3,792 @@
 
 <head>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Pengaduan | SDN Ngletih 1</title>
+    <title>Pengaduan | SDN Ngletih 1</title>
 
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- ==================================================
+         GOOGLE FONT
+    ================================================== -->
 
-<link rel="stylesheet"
-href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com">
 
-<link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
 
-<link rel="stylesheet" href="assets/css/layanan.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+
+    <!-- ==================================================
+         BOOTSTRAP
+    ================================================== -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+
+    <!-- ==================================================
+         BOOTSTRAP ICON
+    ================================================== -->
+
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+
+    <!-- ==================================================
+         GLOBAL CSS
+    ================================================== -->
+
+    <link rel="stylesheet"
+        href="assets/css/style.css">
+
+
+    <!-- ==================================================
+         CSS KHUSUS HALAMAN PENGADUAN
+    ================================================== -->
+
+    <link rel="stylesheet"
+        href="assets/css/aduan.css">
 
 </head>
 
+
 <body>
 
- <!-- ==========================
-            NAVBAR
-    =========================== -->
 
-    <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top">
+<!-- ======================================================
+                        NAVBAR
+====================================================== -->
 
-        <div class="container">
+<nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top">
 
-            <a class="navbar-brand fw-bold d-flex align-items-center"
-                href="index.html">
+    <div class="container">
 
-                <img src="assets/images/logo ngletih.PNG"
-                    class="navbar-logo me-2"
-                    alt="Logo">
 
-                SDN Ngletih 1
+        <!-- LOGO -->
 
-            </a>
+        <a class="navbar-brand fw-bold d-flex align-items-center"
+            href="index.html">
 
-            <button class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarNav">
+            <img src="assets/images/logo ngletih.PNG"
+                class="navbar-logo me-2"
+                alt="Logo SDN Ngletih 1">
 
-                <span class="navbar-toggler-icon"></span>
+            SDN Ngletih 1
 
-            </button>
+        </a>
 
-            <div class="collapse navbar-collapse"
-                id="navbarNav">
 
-                <ul class="navbar-nav ms-auto">
+        <!-- TOGGLE -->
 
-                    <li class="nav-item">
-                        <a class="nav-link"
-                            href="index.html">
-                            Beranda
-                        </a>
-                    </li>
+        <button class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarAduan">
 
-                    <li class="nav-item">
-                        <a class="nav-link active fw-semibold"
-                            href="aduan.html">
-                            Aduan
-                        </a>
-                    </li>
+            <span class="navbar-toggler-icon"></span>
 
-                </ul>
+        </button>
+
+
+        <!-- MENU -->
+
+        <div class="collapse navbar-collapse"
+            id="navbarAduan">
+
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+
+                    <a class="nav-link"
+                        href="index.html">
+
+                        Beranda
+
+                    </a>
+
+                </li>
+
+
+                <li class="nav-item">
+
+                    <a class="nav-link active fw-semibold"
+                        href="aduan.html">
+
+                        Aduan
+
+                    </a>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+
+<!-- ======================================================
+                        HERO
+====================================================== -->
+
+<section class="aduan-hero">
+
+    <div class="container">
+
+        <div class="row align-items-center g-5">
+
+
+            <!-- TEXT -->
+
+            <div class="col-lg-7">
+
+                <span class="aduan-badge">
+
+                    <i class="bi bi-chat-dots-fill"></i>
+
+                    LAYANAN ASPIRASI
+
+                </span>
+
+
+                <h1 class="aduan-hero-title">
+
+                    Layanan
+
+                    <span>Pengaduan</span>
+
+                </h1>
+
+
+                <p class="aduan-hero-text">
+
+                    SDN Ngletih 1 menyediakan layanan pengaduan
+                    untuk menerima kritik, saran, maupun laporan
+                    dari masyarakat demi meningkatkan kualitas
+                    pelayanan sekolah.
+
+                </p>
+
+
+                <!-- BUTTON -->
+
+                <a href="https://forms.gle/GoxFYcANVcYqpBTY8"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="aduan-main-button">
+
+                    <i class="bi bi-send-fill"></i>
+
+                    Isi Form Pengaduan
+
+                </a>
+
+            </div>
+
+
+            <!-- IMAGE -->
+
+            <div class="col-lg-5 text-center">
+
+                <div class="aduan-hero-image-wrapper">
+
+                    <img src="assets/images/aduan.png"
+                        class="img-fluid aduan-hero-image"
+                        alt="Layanan Pengaduan SDN Ngletih 1">
+
+                </div>
 
             </div>
 
         </div>
 
-    </nav>
-
-<!-- HERO -->
-
-<section class="layanan-hero">
-
-<div class="container">
-
-<div class="row align-items-center">
-
-<div class="col-lg-7">
-
-<span class="layanan-badge">
-
-<i class="bi bi-chat-dots-fill me-2"></i>
-
-Layanan Aspirasi
-
-</span>
-
-<h1 class="layanan-title">
-
-Layanan
-
-<span>Pengaduan</span>
-
-</h1>
-
-<p class="layanan-text">
-
-SDN Ngletih 1 menyediakan layanan pengaduan
-untuk menerima kritik, saran, maupun laporan
-dari masyarakat demi meningkatkan kualitas
-pelayanan sekolah.
-
-</p>
-
-<a href="https://forms.gle/GoxFYcANVcYqpBTY8"
-
-target="_blank"
-
-class="btn btn-warning btn-lg">
-
-<i class="bi bi-send-fill me-2"></i>
-
-Isi Form Pengaduan
-
-</a>
-
-</div>
-
-<div class="col-lg-5 text-center">
-
-<img src="assets/images/aduan.png"
-
-class="img-fluid layanan-image">
-
-</div>
-
-</div>
-
-</div>
+    </div>
 
 </section>
 
-<!-- CONTENT -->
 
-<section class="siladik-section">
 
-<div class="container">
+<!-- ======================================================
+                JENIS LAYANAN
+====================================================== -->
 
-<div class="row g-4">
+<section class="aduan-type-section">
 
-<div class="col-lg-4">
+    <div class="container">
 
-<div class="layanan-card">
 
-<div class="layanan-icon">
+        <!-- TITLE -->
 
-<i class="bi bi-exclamation-circle-fill"></i>
+        <div class="aduan-section-heading text-center">
 
-</div>
+            <span>
 
-<h3>Pengaduan</h3>
+                LAYANAN ASPIRASI
 
-<p>
+            </span>
 
-Menyampaikan laporan mengenai pelayanan sekolah.
+            <h2>
 
-</p>
+                Sampaikan Aspirasi Anda
 
-</div>
+            </h2>
 
-</div>
+            <p>
 
-<div class="col-lg-4">
+                Kami terbuka terhadap berbagai bentuk
+                masukan dari masyarakat untuk meningkatkan
+                kualitas pelayanan sekolah.
 
-<div class="layanan-card">
+            </p>
 
-<div class="layanan-icon bg-success">
+        </div>
 
-<i class="bi bi-lightbulb-fill"></i>
 
-</div>
+        <!-- CARDS -->
 
-<h3>Saran</h3>
+        <div class="row g-4">
 
-<p>
 
-Memberikan masukan untuk meningkatkan mutu pelayanan.
+            <!-- PENGADUAN -->
 
-</p>
+            <div class="col-lg-4 col-md-6">
 
-</div>
+                <div class="aduan-type-card">
 
-</div>
+                    <div class="aduan-type-icon">
 
-<div class="col-lg-4">
+                        <i class="bi bi-exclamation-circle-fill"></i>
 
-<div class="layanan-card">
+                    </div>
 
-<div class="layanan-icon bg-warning text-dark">
 
-<i class="bi bi-hand-thumbs-up-fill"></i>
+                    <h3>
 
-</div>
+                        Pengaduan
 
-<h3>Apresiasi</h3>
+                    </h3>
 
-<p>
 
-Memberikan penghargaan kepada guru maupun sekolah.
+                    <p>
 
-</p>
+                        Menyampaikan laporan mengenai
+                        pelayanan sekolah yang membutuhkan
+                        perhatian dan tindak lanjut.
 
-</div>
+                    </p>
 
-</div>
+                </div>
 
-</div>
+            </div>
 
-</div>
+
+
+            <!-- SARAN -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="aduan-type-card">
+
+                    <div class="aduan-type-icon aduan-icon-green">
+
+                        <i class="bi bi-lightbulb-fill"></i>
+
+                    </div>
+
+
+                    <h3>
+
+                        Saran
+
+                    </h3>
+
+
+                    <p>
+
+                        Memberikan masukan dan ide untuk
+                        meningkatkan mutu pelayanan
+                        SDN Ngletih 1.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- APRESIASI -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="aduan-type-card">
+
+                    <div class="aduan-type-icon aduan-icon-yellow">
+
+                        <i class="bi bi-hand-thumbs-up-fill"></i>
+
+                    </div>
+
+
+                    <h3>
+
+                        Apresiasi
+
+                    </h3>
+
+
+                    <p>
+
+                        Memberikan penghargaan atau apresiasi
+                        kepada guru maupun sekolah atas
+                        pelayanan yang diberikan.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
 
 </section>
 
-<!-- INFORMASI -->
 
-<section class="layanan-info">
 
-<div class="container">
+<!-- ======================================================
+            REKAPITULASI PENGADUAN
+====================================================== -->
 
-<div class="info-box">
+<section class="aduan-rekap-section">
 
-<i class="bi bi-info-circle-fill"></i>
+    <div class="container">
 
-<div>
+        <div class="row align-items-start g-5">
 
-<h4>Informasi Pengaduan</h4>
 
-<p>
+            <!-- ==================================================
+                        GAMBAR REKAP
+            ================================================== -->
 
-Seluruh pengaduan akan diproses oleh pihak sekolah.
+            <div class="col-lg-6">
 
-Harap mengisi data dengan benar agar pengaduan dapat ditindaklanjuti.
+                <div class="aduan-rekap-image-card">
 
-Estimasi respon maksimal 2×24 jam pada hari kerja.
+                    <img src="assets/images/rekapan-aduan.jpeg"
+                        class="aduan-rekap-image"
+                        alt="Rekapitulasi Laporan dan Aduan Masyarakat SDN Ngletih 1">
 
-</p>
 
-</div>
+                    <div class="aduan-rekap-caption">
 
-</div>
+                        <i class="bi bi-file-earmark-bar-graph-fill"></i>
 
-</div>
+                        <span>
+
+                            Rekapitulasi Laporan/Aduan Masyarakat
+
+                            <br>
+
+                            Periode Juni–Agustus 2026
+
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ==================================================
+                        DESKRIPSI
+            ================================================== -->
+
+            <div class="col-lg-6">
+
+                <div class="aduan-rekap-content">
+
+
+                    <!-- LABEL -->
+
+                    <span class="aduan-section-label">
+
+                        <i class="bi bi-bar-chart-fill"></i>
+
+                        REKAPITULASI PENGADUAN
+
+                    </span>
+
+
+                    <!-- TITLE -->
+
+                    <h2>
+
+                        Rekapitulasi Laporan/Aduan Masyarakat
+
+                    </h2>
+
+
+                    <div class="aduan-period">
+
+                        <i class="bi bi-calendar3"></i>
+
+                        Periode Juni–Agustus 2026
+
+                    </div>
+
+
+                    <!-- DESCRIPTION -->
+
+                    <p>
+
+                        Sebagai bentuk transparansi, akuntabilitas,
+                        dan komitmen dalam meningkatkan kualitas
+                        pelayanan publik, SDN Ngletih 1 secara berkala
+                        melakukan rekapitulasi laporan dan aduan yang
+                        disampaikan oleh masyarakat, peserta didik,
+                        orang tua/wali, serta pengguna layanan sekolah.
+
+                    </p>
+
+
+                    <p>
+
+                        Pada periode <strong>Juni–Agustus 2026</strong>,
+                        SDN Ngletih 1 menerima sebanyak
+                        <strong>6 laporan/aduan masyarakat</strong>.
+                        Seluruh laporan tersebut telah mendapatkan
+                        tindak lanjut.
+
+                    </p>
+
+
+
+                    <!-- ==================================================
+                                STATISTIK
+                    ================================================== -->
+
+                    <div class="aduan-stat-grid">
+
+
+                        <!-- TOTAL -->
+
+                        <div class="aduan-stat-card">
+
+                            <div class="aduan-stat-icon">
+
+                                <i class="bi bi-file-earmark-text-fill"></i>
+
+                            </div>
+
+                            <div>
+
+                                <span>Total Aduan</span>
+
+                                <strong>6</strong>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- SELESAI -->
+
+                        <div class="aduan-stat-card">
+
+                            <div class="aduan-stat-icon aduan-stat-success">
+
+                                <i class="bi bi-check-circle-fill"></i>
+
+                            </div>
+
+                            <div>
+
+                                <span>Selesai</span>
+
+                                <strong>6</strong>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- PROSES -->
+
+                        <div class="aduan-stat-card">
+
+                            <div class="aduan-stat-icon aduan-stat-warning">
+
+                                <i class="bi bi-arrow-repeat"></i>
+
+                            </div>
+
+                            <div>
+
+                                <span>Dalam Proses</span>
+
+                                <strong>0</strong>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- BELUM -->
+
+                        <div class="aduan-stat-card">
+
+                            <div class="aduan-stat-icon aduan-stat-danger">
+
+                                <i class="bi bi-clock-fill"></i>
+
+                            </div>
+
+                            <div>
+
+                                <span>Belum Ditindaklanjuti</span>
+
+                                <strong>0</strong>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+
+
+                    <!-- JENIS ADUAN -->
+
+                    <div class="aduan-info-card">
+
+                        <h4>
+
+                            <i class="bi bi-list-check"></i>
+
+                            Jenis Aduan
+
+                        </h4>
+
+
+                        <p>
+
+                            Adapun jenis aduan yang diterima meliputi
+                            <strong>sarana dan prasarana</strong>,
+                            <strong>pelayanan informasi</strong>,
+                            serta <strong>kebersihan dan lingkungan
+                            sekolah</strong>.
+
+                        </p>
+
+                    </div>
+
+
+
+                    <!-- TINDAK LANJUT -->
+
+                    <div class="aduan-info-card">
+
+                        <h4>
+
+                            <i class="bi bi-check2-circle"></i>
+
+                            Tindak Lanjut
+
+                        </h4>
+
+
+                        <p>
+
+                            Setiap laporan yang masuk menjadi bahan
+                            evaluasi bagi sekolah untuk melakukan
+                            perbaikan dan peningkatan kualitas pelayanan.
+
+                            Dalam menindaklanjuti setiap aduan,
+                            SDN Ngletih 1 mengedepankan komunikasi,
+                            koordinasi, respons yang tepat, serta
+                            penyelesaian yang berorientasi pada
+                            kenyamanan dan kepentingan seluruh
+                            warga sekolah.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+             <!-- ==================================================
+                            KOMITMEN
+                    ================================================== -->
+
+                    <div class="aduan-commitment">
+
+                        <!-- ICON -->
+                        <div class="aduan-commitment-icon">
+                            <i class="bi bi-quote"></i>
+                        </div>
+
+                        <!-- CONTENT -->
+                        <div class="aduan-commitment-content">
+
+                            <h4>
+                                Komitmen SDN Ngletih 1
+                            </h4>
+
+                            <p class="aduan-quote">
+                                “Setiap laporan dan aduan merupakan bahan evaluasi
+                                untuk memberikan pelayanan yang lebih baik,
+                                transparan, responsif, dan berkualitas.”
+                            </p>
+
+                            <p>
+                                SD Negeri Ngletih 1 juga mengajak seluruh masyarakat,
+                                peserta didik, dan orang tua/wali untuk turut berpartisipasi
+                                dalam memberikan saran, masukan, maupun laporan apabila
+                                terdapat hal-hal yang perlu diperbaiki dalam pelayanan sekolah.
+                            </p>
+
+                            <p>
+                                Laporan atau aduan dapat disampaikan melalui kotak pengaduan,
+                                WhatsApp/media komunikasi resmi sekolah, maupun secara langsung
+                                kepada petugas pelayanan.
+                            </p>
+
+                            <p>
+                                Melalui keterbukaan terhadap kritik, saran, dan pengaduan,
+                                SD Negeri Ngletih 1 terus berupaya mewujudkan pelayanan
+                                pendidikan yang bersih, transparan, responsif, nyaman,
+                                dan berkualitas.
+                            </p>
+
+                            <p class="mb-0">
+                                Terima kasih atas kepercayaan dan partisipasi seluruh masyarakat
+                                dalam mendukung peningkatan kualitas pelayanan SD Negeri Ngletih 1.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+        </div>
+
+    </div>
 
 </section>
+
+
+
+<!-- ======================================================
+                    AJAKAN PENGADUAN
+====================================================== -->
+
+<section class="aduan-cta-section">
+
+    <div class="container">
+
+        <div class="aduan-cta">
+
+
+            <div class="aduan-cta-icon">
+
+                <i class="bi bi-megaphone-fill"></i>
+
+            </div>
+
+
+            <div class="aduan-cta-content">
+
+                <h2>
+
+                    Sampaikan Kritik, Saran, dan Pengaduan
+
+                </h2>
+
+
+                <p>
+
+                    SDN Ngletih 1 mengajak seluruh masyarakat,
+                    peserta didik, dan orang tua/wali untuk turut
+                    berpartisipasi dalam meningkatkan kualitas
+                    pelayanan sekolah.
+
+                </p>
+
+
+                <p>
+
+                    Laporan atau aduan dapat disampaikan melalui
+                    kotak pengaduan, WhatsApp/media komunikasi
+                    resmi sekolah, maupun secara langsung kepada
+                    petugas pelayanan.
+
+                </p>
+
+
+                <a href="https://forms.gle/GoxFYcANVcYqpBTY8"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="aduan-main-button">
+
+                    <i class="bi bi-send-fill"></i>
+
+                    Sampaikan Pengaduan
+
+                </a>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ======================================================
+                        FOOTER
+====================================================== -->
 
 <footer class="footer">
 
-<div class="container text-center">
+    <div class="container text-center">
 
-<p class="mb-0">
+        <p class="mb-0">
 
-© 2026 SDN Ngletih 1
+            © 2026 SDN Ngletih 1
 
-</p>
+        </p>
 
-</div>
+    </div>
 
 </footer>
 
+
+
+<!-- ======================================================
+                    BOOTSTRAP JS
+====================================================== -->
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 
 </body>
 
